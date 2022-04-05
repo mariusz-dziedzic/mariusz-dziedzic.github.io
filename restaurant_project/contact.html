@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Very delicious dishes">
+    <meta name="keywords" content="Restaurant, Food, Spoon and Fork ">
+    <meta name="author" content="Mariusz Dziedzic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/png" href="images/favicon2.png"/>
+    <title>Spoon & Fork </title>
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <a href="index.html"><img src="images/logo2.png" class="logo" alt="Spoon & Fork"></a>
+        <h1>Spoon & Fork</h1>
+      </header>
+      <nav id="myHeader">
+        <a href="index.html">Start</a>
+        <a href="index.html#about_us">About us</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#team">Team</a>
+        <a href="contact.html">Contact</a>
+        <script src="js/static-menu.js"></script>
+      </nav>
+      <main>
+        <div class="slideshow" style="max-width:1000px">
+          <img class="slide" src="images/slide_food1.jpg" title="Photo by Jay Wennington on Unsplash">
+          <img class="slide" src="images/slide_food2.jpg" title="Photo by Louis Hansel on Unsplash">
+          <img class="slide" src="images/slide_food3.jpg" title="Photo by Peter Dawn on Unsplash">
+          <img class="slide" src="images/slide_food4.jpg" title="Photo by Louis Hansel on Unsplash">
+          <img class="slide" src="images/slide_food5.jpg" title="Photo by Louis Hansel on Unsplash">
+          <script src="js/slide.js"></script>
+        </div>
+        <article style="padding-bottom: 0px;">
+          <h2>Contact</h2> <br>
+          <div id="contact">
+            <div id="visit">
+              <b>Spoon & Fork</b><br>
+               2 West 77th Street <br>
+               New York<br>
+              555-876-8700<br>
+              spoonfork@mail.com<br>
+            </div>
+            <form action="contact.html" method="get">
+             <label for="fname">Full name:</label>
+             <input type="text" minlength="7" maxlength="40" name="first_name" pattern="[A-Za-z ]{7,40}" required><br>
+             <label for="phone">Phone:</label>
+             <input type="tel" id="phone" name="phone"pattern="[0-9]{9}"required><br>
+             <label for="topic">Topic:</label>
+             <select id="topic" name="topic" required>
+               <option disabled selected value> -- Select  -- </option>
+               <option value="reservation">Reservation</option>
+               <option value="event">Event</option>
+               <option value="suggestions">Suggestions</option>
+               <option value="other">Other</option>
+             </select><br>
+             <textarea style="max-width: 350px" maxlength="256" rows="4" cols="30" name="comment">Enter text here...</textarea><br>
+             <input type="submit" class="button" value="Submit">
+            </form>
+          </div>
+          <br><br>
+          <div class="map-responsive">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-73.97586643695833%2C40.77855913255932%2C-73.97203087806703%2C40.78032614402106&amp;layer=mapnik&amp;marker=40.77944264416577%2C-73.97394865751266"  frameborder="0" style="border:0"></iframe><br/>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <a href="https://www.facebook.com/" target="_blank"><img class="social" src="images/Facebook.png"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="social" src="images/Instagram.png"></a>
+        <a href="https://www.twitter.com/" target="_blank"><img class="social" src="images/Twitter.png"></a>
+        <p> Spoon & Fork<br>Mariusz Dziedzic &copy; Copyright 2022</p>
+        <section id="MyClockDisplay" class="clock" onload="showTime()"></section>
+        <script src="js/clock.js"></script>
+      </footer>
+    </div>
+  </body>
+</html>

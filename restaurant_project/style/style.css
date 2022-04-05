@@ -1,0 +1,349 @@
+@font-face {
+  font-family: BLKCHCRY;
+  src: url(BLKCHCRY.TTF);
+}
+
+body {
+  font-family: BLKCHCRY;
+  background-color: #1f0100;
+}
+
+#page {
+  max-width: 999px;
+  display: block;
+  background-color: #3a010c;
+  color: white;
+  margin:auto;
+}
+
+header {
+  background-color: #3a010c;
+  display: flex;
+  text-align: left;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+header>h1 {
+  font-size: 62px;
+  color: white;
+}
+
+img.logo  {
+  margin: 15px 25px;
+  height: 200px;
+}
+
+nav {
+  background-color: #3a010c;
+  margin: auto;
+  height: auto;
+  display: block;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 25px;
+  font-weight: bold;
+  padding-top: 25px;
+}
+
+nav>a {
+  color: white;
+  padding: 25px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+nav>a:hover {
+  background: #1f0100;
+}
+
+main {
+  background-color: #3a010c;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  min-height: 650px;
+}
+
+footer {
+  display: block;
+  background-color: #3a010c;
+  margin: auto;
+  min-height: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+footer>p {
+  padding:0px;
+}
+
+p#gallery {
+  padding: 0px;
+}
+
+p {
+  padding: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h3 {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+figure {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+figcaption {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+}
+
+article {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.social {
+  height: 35px;
+  weight: 35px;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.team{
+  display: inline-block;
+  height: 275px;
+  width: auto;
+  border-radius: 50%;
+  padding: 10px 10px 5px 10px;
+}
+
+img.team:hover {
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+
+.slide{
+  animation:fading 10s infinite
+  }
+@keyframes fading{
+    0%{opacity:0}
+    25%{opacity:1}
+    50%{opacity:0}
+    100%{opacity:1}
+  }
+
+img.slide {
+  height:400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+*{
+	padding: 0px;
+	margin:0px;
+	box-sizing: border-box;
+}
+
+.box{
+	width: 100%;
+	min-height:400px;
+}
+
+.section-1{
+	background: ;
+}
+
+.section-2{
+  background-image: url(back-4.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.section-3{
+	background: ;
+}
+
+.section-4{
+	background-image: url(back-3.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
+.map-responsive{
+    position: relative;
+    height: 350px;
+    width: 100%;
+
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#contact {
+  display: inline-flex;
+  justify-content: center;
+}
+
+#visit {
+  display:inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #1f0100;
+  border-radius: 10px;
+  padding: 60px;
+  min-width: 400px;
+  min-height: 250px;
+  margin:10px;
+}
+
+ form {
+  display:inline-block;
+  align-items: center;
+  text-align: right;
+  justify-content: center;
+  background-color: #1f0100;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 400px;
+  min-height: 250px;
+  margin:10px;
+}
+
+.button {
+background-color: #3a010c;
+font-family: BLKCHCRY;
+border: none;
+color: white;
+margin-top:5px;
+padding: 12px 24px;
+display: inline-block;
+font-size: 16px;
+}
+
+.button:hover {
+  background-color: #3f0100;
+}
+
+input, textarea, select{
+  border: none;
+  background-color: #3a010c;
+  color: white;
+}
+
+input, textarea:focus {
+  border: 3px solid #1f0100;
+}
+
+
+
+img.gallery {
+  margin: 10px;
+}
+
+
+@media screen and (max-width: 840px) {
+  #contact {
+    display: block;
+    }
+  }
+
+
+@media screen and (max-width: 750px) {
+  header>h1 {
+    font-size: 52px;
+    }
+  img.logo  {
+    height: 175px;
+  }
+  nav {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  nav>a {
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  header>h1 {
+    font-size: 42px;
+    }
+    nav {
+      padding-bottom: 10px;
+      padding-top: 10px;
+      line-height: 40px;
+    }
+
+    nav>a {
+      padding-bottom: 10px;
+      padding-top: 10px;
+      font-size: 16px;
+    }
+  }
+
+
+
+@media screen and (max-width: 400px) {
+  header>h1 {
+    font-size: 34px;
+    }
+  img.logo  {
+    height: 150px;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  #visit, form {
+    min-width: 250px;
+  }
+  img.gallery {
+    max-height: 10%;
+    max-width: 10%;
+  }
+}

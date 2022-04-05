@@ -1,0 +1,58 @@
+.menu {
+  font-family: BLKCHCRY;
+  background-color: #3a010c;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+li {
+  padding: 5px;
+}
+
+hr {
+  color: #1f0100;
+}
+
+.active, .menu:hover {
+  background-color: #1f0100;
+}
+
+.menu:after {
+  content: '\2228';
+  float: right;
+}
+
+.active:after {
+  content: "\2227";
+}
+
+.panel {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+  ul.menu-ul {
+  max-width: 999px;
+  padding: 10px;
+  list-style: none;
+}
+
+
+@media screen and (max-width: 450px) {
+  span {
+    font-size:15px; }
+  }
+
+  @media screen and (max-width: 350px) {
+    span {
+      font-size:12px; }
+    }
